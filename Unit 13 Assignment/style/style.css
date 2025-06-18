@@ -1,0 +1,370 @@
+body {
+    background-color: #000000a9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding: 0;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+.welcome-text {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title-text {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header {
+    min-height: 1em;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-right: 32px;
+    background: #9b9b9b;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.logo {
+    height: 90%;
+}
+
+nav {
+    flex: 1;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    gap: clamp(8px, 4vw, 32px); /* Responsive gap */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(1rem, 2vw, 24px); /* Responsive font size */
+    transition: color 0.25s;
+}
+
+nav a:hover {
+    color: #df4343a4;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #9b9b9b;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center; /* You can remove this if you want left/right alignment */
+    padding: 12px 0;
+    z-index: 100;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between; /* Space out the two pieces of text */
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.footer-content {
+    max-width: 85vw;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer-number {
+    /* Optional: style for the number */
+    font-weight: bold;
+}
+
+.class-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* ensures all children are same height */
+    gap: 40px;
+    min-height: 80vh;
+    margin: 40px 0;
+}
+
+.class-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    min-height: 80vh;
+    margin: 40px 0;
+    align-items: stretch;
+    justify-items: center;
+}
+
+.class-box {
+    box-sizing: border-box;
+    flex: 1 1 90%;    /* 2 per row, flexible */
+    max-width: 90%;   /* Prevents more than 2 per row */
+    border: 10px solid #fff;
+    background: #222;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    text-align: center;
+    
+}
+
+.box {
+    box-sizing: border-box;
+    width: 90%;
+    border: 10px solid #fff;
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    text-align: center;
+}
+
+.box p,
+.box h2,
+.class-box h2,
+.class-box p {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    line-height: 1.1;
+    word-break: break-word;
+    overflow-wrap: break-word; /* Ensures long words break */
+}
+
+.styled-table {
+    width: auto;                /* Let the table size to its content/max-width */
+    max-width: 100%;            /* Prevent overflow */
+    margin-left: auto;          /* Center horizontally */
+    margin-right: auto;         /* Center horizontally */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    background: #222;
+    color: #fff;
+    border: 10px solid #fff;
+    text-align: center;
+    /* Halve the font size */
+    font-size: clamp(0.5rem, 1.5vw, 1.25rem);
+}
+
+.styled-table td, .styled-table th {
+    border: 2px solid #fff;
+    padding: 8px; /* Reduce padding for smaller text */
+    min-width: 12.5%;  /* Set a fixed min width */
+    width: 12.5%;      /* Set a fixed width */
+    height: 48px;     /* Set a fixed height */
+    text-align: center;
+    vertical-align: middle;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.styled-table th {
+    background: #333;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 20%;
+    box-shadow: 0px 8px 16px 0px rgba(85, 85, 85, 0.2);
+    z-index: 200;
+    flex-direction: column;
+    border: 4px solid #fff;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 18px;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+    color: #df4343a4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown:hover .dropbtn {
+    color: #df4343a4;
+}
+
+.btn {
+    width: 40%;
+    margin: 16px auto 0 auto;
+    display: block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2rem;
+    background: #df4343a4;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background 0.2s;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #b32d2d;
+}
+
+.circle-row {
+    display: flex;
+    justify-content: center;      /* Center the images horizontally */
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    margin: 32px 0;
+    gap: 16px;
+}
+
+.circle-img {
+    width: clamp(40px, 15.5%, 150px);   /* min 40px, preferred 12.5%, max 100px (adjust max as needed) */
+    height: clamp(40px, 15.5%, 150px);
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background: #222;
+    flex-shrink: 1;
+    transition: transform 0.25s;
+}
+
+.circle-img:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.home-btn-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin: 32px 0;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222;
+    border: 8px solid #fff;
+    max-width: 800px;
+    width: 80%;
+    margin: 40px auto 40px auto; /* Add bottom margin to separate from footer */
+    padding: 32px 24px;
+    gap: 18px;
+}
+
+.login-form label {
+    color: #fff;
+    font-size: 1.1rem;
+    align-self: flex-start;
+    margin-bottom: 4px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="tel"],
+.login-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #9b9b9b;
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #333;
+    color: #fff;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus,
+.login-form input[type="tel"]:focus,
+.login-form input[type="text"]:focus {
+    outline: none;
+    border-color: #df4343a4;
+}
+
+.login-form .btn {
+    width: 100%;
+    margin: 16px 0 0 0;
+}
+
+.login-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #9b9b9b;
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #333;
+    color: #fff;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+

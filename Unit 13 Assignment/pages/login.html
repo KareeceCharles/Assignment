@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/assets/DoBu Logo.png" alt="DoBu Martial Arts Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="classes.html" class="dropbtn">Classes</a>
+                <div class="dropdown-content">
+                    <a href="jiu-jitsu.html">Jiu-Jitsu</a>
+                    <a href="karate.html">Karate</a>
+                    <a href="judo.html">Judo</a>
+                    <a href="muay-thai.html">Muay Thai</a>
+                    <a href="instructors.html">Instructors</a>
+                </div>
+            </div>
+            <a href="timetable.html">Timetable</a>
+            <a href="membership.html">Memberships</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <h1 class="title-text">Login</h1>
+
+    <form class="login-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required autocomplete="current-password">
+
+        <button type="submit" class="btn">Log In</button>
+    </form>
+
+    <h1 class="title-text">Sign Up</h1>
+    
+    <form class="login-form" id="create-account-form">
+        <label for="new-email">Email:</label>
+        <input type="email" id="new-email" name="new-email" required autocomplete="username">
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10,15}" autocomplete="tel">
+
+        <label for="new-password">Password:</label>
+        <input type="text" id="new-password" name="new-password" required autocomplete="new-password">
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required autocomplete="new-password">
+
+        <button type="submit" class="btn">Create Account</button>
+    </form>
+
+    <footer>
+        <div class="footer-content">
+            <span>&copy; 2025 DoBu Martial Arts. All rights reserved.</span>
+            <span class="footer-number">No: +44798769876</span>
+        </div>
+    </footer>
+    <script src="../java/script.js"></script>
+</body>
+</html>
